@@ -1,0 +1,17 @@
+@keyframes moveBackground {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 0px 200px;
+    }
+}
+
+#page-background {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../res/svg/space-object.svg");
+    background-size: 200px 200px;
+    animation: moveBackground 10s linear infinite;
+}
