@@ -1,29 +1,28 @@
 import { useState } from "react"
 import VerticalSection from "./VerticalSection"
 import "./VerticalSideBar.css"
+
 function VerticalSideBar() {
-    let tempSectionStates = [true, false, false, false]
-    let [sectionStates, setSectionStates] = useState(tempSectionStates)
+    let [sectionStates, setSectionStates] = useState([true, false, false, false])
 
     function changeSectionStates(section) {
+        let tempSectionStates = [false, false, false, false]
+
         if (section === "home") {
-            tempSectionStates.fill(false)
             tempSectionStates[0] = true
             setSectionStates(tempSectionStates)
         } else if (section === "post") {
-            tempSectionStates.fill(false)
             tempSectionStates[1] = true
             setSectionStates(tempSectionStates)
         } else if (section === "discussion") {
-            tempSectionStates.fill(false)
             tempSectionStates[2] = true
             setSectionStates(tempSectionStates)
         } else if (section === "policy") {
-            tempSectionStates.fill(false)
             tempSectionStates[3] = true
             setSectionStates(tempSectionStates)
         }
     }
+
     return (
         <div className="vertical-side-bar">
             <VerticalSection

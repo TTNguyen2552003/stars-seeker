@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../../../res/fonts/Roboto-Regular.ttf");
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+    flex: 1;
+    justify-content: flex-start;
+    grid-template-columns: auto;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+.title {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto-Regular";
+    color: #00ffff;
+    filter: drop-shadow(0px 0px 10px #00ffff);
+    font-size: 45px;
+    line-height: 52px;
+    text-wrap: nowrap;
+}
+
+.body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding-left: 32px;
+    padding-top: 8px;
+    padding-right: 48px;
+    padding-bottom: 0px;
+}
+
+.body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.cta-container-2 {
+    padding-bottom: 48px;
+    padding-right: 36px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.cta-button-2 {
+    padding: 12px 16px;
+    border-radius: 32px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: 150ms linear;
+}
+
+.cta-button-2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+}
+
+.cta-sentence {
+    text-wrap: nowrap;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto-Regular";
+    font-size: 28px;
+    color: #00ffff;
+    filter: drop-shadow(0px 0px 4px #00ffff);
+}
