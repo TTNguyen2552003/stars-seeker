@@ -1,0 +1,9 @@
+.policy-screen {
+    display: flex;
+    flex-direction: column;
+    padding: 96px 48px;
+    gap: 60px;
+    flex: 1;
+    margin-left: 80px;
+    align-items: center;
+}
