@@ -1,5 +1,5 @@
 import "./Content.css"
-
+import CTAButton2 from "../CTAButton/CTAButton2"
 function Content(props) {
     return (
         <div className="content-container">
@@ -9,10 +9,8 @@ function Content(props) {
             <div className="body-container">
                 <p className="body">{props.body}</p>
             </div>
-            <div className="cta-container-2">
-                <button className="cta-button-2">
-                    <p className="cta-sentence">{props.ctaSentence}</p>
-                </button>
+            <div className="cta-button-container">
+                <CTAButton2 />
             </div>
         </div>
     )

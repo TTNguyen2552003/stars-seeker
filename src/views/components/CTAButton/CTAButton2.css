@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../../../res/fonts/Roboto-Regular.ttf);
+}
+
+.cta-button-2 {
+    border-radius: 26px;
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: 150ms;
+}
+
+.cta-button-2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+}
+.cta-button-2 > .cta-sentence {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto-Regular";
+    font-size: 22px;
+    line-height: 28px;
+    align-items: center;
+    justify-content: center;
+    color: #00ffff;
+    filter: drop-shadow(0px 0px 4px #00ffff);
+}

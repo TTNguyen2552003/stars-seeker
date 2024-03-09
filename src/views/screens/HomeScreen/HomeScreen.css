@@ -1,15 +1,17 @@
 .home-screen {
     display: flex;
     flex-direction: column;
-    flex: 1;
     gap: 96px;
     padding: 48px;
+    align-items: center;
     margin-left: 80px;
 }
 
-.cta-button-container-1 {
+.home-screen > .cta-button-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-items: center;
     justify-content: flex-end;
     padding: 8px 0px;
 }

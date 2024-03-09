@@ -1,16 +1,17 @@
 .figure-container {
+    min-width: 428px;
+    max-width: 945px;
+    height: 496px;
     display: flex;
-    flex: 1;
     flex-direction: row;
-    height: 100%;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    height: 496px;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
 }
 
-.figure {
+.figure-container > .figure {
     width: 416px;
     height: 416px;
     border-radius: 8px;

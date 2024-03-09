@@ -8,7 +8,6 @@ function Introduction(props) {
             <Content
                 title={props.title}
                 body={props.body}
-                ctaSentence={props.ctaSentence}
             />
         </div>
     )

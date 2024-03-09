@@ -3,11 +3,11 @@ import "./App.css"
 import VerticalSideBar from "./views/components/VerticalSideBar/VerticalSideBar.js"
 import HomeScreen from "./views/screens/HomeScreen/HomeScreen.js"
 import PolicyScreen from "./views/screens/PolicyScreen/PolicyScreen.js"
+import PostScreen from "./views/screens/PostScreen/PostScreen.js"
 function App() {
     return (
         <div className="App">
             <VerticalSideBar />
-
             <Routes>
                 <Route
                     path="/"
@@ -20,6 +20,10 @@ function App() {
                 <Route
                     path="/policy"
                     element={<PolicyScreen />}
+                />
+                <Route
+                    path="/post"
+                    element={<PostScreen />}
                 />
             </Routes>
         </div>

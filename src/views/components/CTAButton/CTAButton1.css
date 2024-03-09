@@ -4,15 +4,10 @@
 }
 
 .cta-button-1 {
-    padding: 24px 36px;
-    border: 1px solid #00ffff;
-    background-color: #00ffff;
-    color: #00315e;
-    font-family: "Roboto-Medium";
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.1px;
     border-radius: 34px;
+    padding: 24px 36px;
+    background-color: #00ffff;
+    border: 1px solid #00ffff;
     transition: 150ms;
 }
 

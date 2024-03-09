@@ -25,7 +25,7 @@ function VerticalSection(props) {
             break
         case "policy":
             icons = [policy, policyActive]
-            sectionTitle = "Discussion"
+            sectionTitle = "Policy"
             break
         default:
             icons = [home, homeActive]
@@ -42,6 +42,7 @@ function VerticalSection(props) {
             <img
                 src={props.active ? icons[1] : icons[0]}
                 alt="home"
+                className="icon"
             />
             <p
                 className="section-title"

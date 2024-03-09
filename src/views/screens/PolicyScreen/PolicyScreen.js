@@ -21,18 +21,27 @@ function PolicyScreen() {
         "We implement appropriate technical and organizational measures to safeguard your personal information against unauthorized access, disclosure, alteration, or destruction.",
         "Despite our best efforts, no method of transmission over the internet or electronic storage is completely secure. Therefore, we cannot guarantee absolute security of your information."
     ]
-    return (
-        <div className="policy-screen">
-            <LegalDocument
-                title={"Terms & Condition"}
-                body={termsAndConditionsBody}
-            />
-            <LegalDocument
-                title={"Privacy Policy"}
-                body={privacyPolicyBody}
-            />
-        </div>
-    )
+
+    let legalDocument1 = {
+        title: "Terms & Conditions",
+        body: termsAndConditionsBody
+    }
+
+    let legalDocument2 = {
+        title: "Privacy Policy",
+        body: privacyPolicyBody
+    }
+
+    let data = [legalDocument1, legalDocument2]
+
+    let pageContent = data.map((element) => (
+        <LegalDocument
+            title={element.title}
+            body={element.body}
+        />
+    ))
+
+    return <div className="policy-screen">{pageContent}</div>
 }
 
 export default PolicyScreen
