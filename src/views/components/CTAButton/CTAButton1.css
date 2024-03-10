@@ -3,15 +3,32 @@
     src: url("../../../res/fonts/Roboto-Medium.ttf");
 }
 
-.cta-button-1 {
-    border-radius: 34px;
-    padding: 24px 36px;
-    background-color: #00ffff;
-    border: 1px solid #00ffff;
-    transition: 150ms;
+@media only screen and (min-width: 768px) {
+    .cta-button-1 {
+        border-radius: 34px;
+        padding: 24px 36px;
+        background-color: #00ffff;
+        border: 2px solid #00ffff;
+        transition: 150ms;
+    }
+
+    .cta-button-1:hover {
+        cursor: pointer;
+        background-color: white;
+    }
 }
 
-.cta-button-1:hover {
-    cursor: pointer;
-    background-color: white;
+@media only screen and (max-width: 767px) {
+    .cta-button-1 {
+        border-radius: 34px;
+        padding: 16px 24px;
+        background-color: #00ffff;
+        border: 1px solid #00ffff;
+        transition: 150ms;
+    }
+
+    .cta-button-1:hover {
+        cursor: pointer;
+        background-color: white;
+    }
 }

@@ -3,59 +3,120 @@
     src: url("../../../res/fonts/Roboto-Regular.ttf");
 }
 
-.content-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+@media only screen and (min-width: 768px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+    }
+
+    .content-container > .title-container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 32px;
+        padding-top: 40px;
+        padding-right: 48px;
+    }
+
+    .content-container > .title-container > .title {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Roboto-Regular";
+        font-size: 45px;
+        line-height: 52px;
+        color: #00ffff;
+        filter: drop-shadow(0px 0px 10px #00ffff);
+        text-wrap: nowrap;
+    }
+
+    .content-container > .body-container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        padding-left: 32px;
+        padding-top: 8px;
+        padding-right: 48px;
+        padding-bottom: 0px;
+    }
+
+    .content-container > .body-container > .body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: white;
+        text-wrap: wrap;
+    }
+
+    .content-container > .cta-button-container {
+        display: flex;
+        flex-direction: row;
+        padding-right: 48px;
+        padding-bottom: 36px;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 
-.content-container > .title-container {
-    display: flex;
-    flex-direction: row;
-    padding-left: 32px;
-    padding-top: 40px;
-    padding-right: 48px;
-}
+@media only screen and (max-width: 767px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid white;
+    }
 
-.content-container > .title-container > .title {
-    padding: 0px;
-    margin: 0px;
-    font-family: "Roboto-Regular";
-    font-size: 45px;
-    line-height: 52px;
-    color: #00ffff;
-    filter: drop-shadow(0px 0px 10px #00ffff);
-    text-wrap: nowrap;
-}
+    .content-container > .title-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 24px;
+        padding-right: 16px;
+        padding-top: 20px;
+        padding-bottom: 4px;
+    }
 
-.content-container > .body-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding-left: 32px;
-    padding-top: 8px;
-    padding-right: 48px;
-    padding-bottom: 0px;
-}
+    .content-container > .title-container > .title {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Roboto-Regular";
+        font-size: 32px;
+        line-height: 40px;
+        color: #00ffff;
+        filter: drop-shadow(0px 0px 10px #00ffff);
+        text-wrap: wrap;
+    }
 
-.content-container > .body-container > .body {
-    padding: 0px;
-    margin: 0px;
-    font-family: "Roboto-Regular";
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: white;
-    text-wrap: wrap;
-}
+    .content-container > .body-container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 4px;
+    }
 
-.content-container > .cta-button-container {
-    display: flex;
-    flex-direction: row;
-    padding-right: 48px;
-    padding-bottom: 36px;
-    align-items: center;
-    justify-content: flex-end;
+    .content-container > .body-container > .body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: white;
+        text-wrap: wrap;
+    }
+
+    .content-container > .cta-button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 0px;
+        padding-right: 24px;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
 }

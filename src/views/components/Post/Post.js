@@ -33,7 +33,7 @@ function Post(props) {
             <div className="body-container">
                 <p className="body">{body}</p>
             </div>
-            {(figureContent != null) && figureContent}
+            {figureContent != null && figureContent}
             <div className="date-posted-container">
                 <p className="date-posted">{props.datePosted}</p>
             </div>

@@ -3,27 +3,25 @@
     src: url(../../../res/fonts/Roboto-Medium.ttf);
 }
 
-.vertical-section {
-    width: 80px;
-    height: auto;
+.horizontal-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 8px;
+    padding: 4px 0px;
 }
 
-.vertical-section > .icon {
-    width: 48px;
-    height: 48px;
+.horizontal-section > .icon {
+    width: 24px;
+    height: 24px;
+    object-fit: fill;
 }
 
-.section-title {
+.horizontal-section > .section-title {
     padding: 0px;
     margin: 0px;
     font-family: "Roboto-Medium";
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.5px;
-    text-align: center;
 }

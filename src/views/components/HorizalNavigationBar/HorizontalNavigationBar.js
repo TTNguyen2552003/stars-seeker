@@ -1,36 +1,27 @@
-import VerticalSection from "./VerticalSection"
-import "./VerticalSideBar.css"
 import { Link } from "react-router-dom"
-import logo from "../../../res/svg/logo.svg"
-function VerticalSideBar(props) {
+import "./HorizontalNavigationBar.css"
+import HorizontalSection from "./HorizontalSection"
+function HorizontalNavigationBar(props) {
     let changeSectionStates = props.changeSectionStates
 
     return (
-        <div className="vertical-side-bar">
+        <div className="horizontal-navigation-bar">
             <Link to="/">
-                <img
-                    src={logo}
-                    className="logo"
-                    alt="logo"
-                    onClick={() => changeSectionStates("home")}
-                />
-            </Link>
-            <Link to="/">
-                <VerticalSection
+                <HorizontalSection
                     icon="home"
                     active={props.sectionStates[0]}
                     onClick={() => changeSectionStates("home")}
                 />
             </Link>
             <Link to="/post">
-                <VerticalSection
+                <HorizontalSection
                     icon="post"
                     active={props.sectionStates[1]}
                     onClick={() => changeSectionStates("post")}
                 />
             </Link>
             {/* <Link to="/discussion">
-                <VerticalSection
+                <HorizontalSection
                     icon="discussion"
                     active={sectionStates[2]}
                     onClick={() => changeSectionStates("discussion")}
@@ -38,7 +29,7 @@ function VerticalSideBar(props) {
 
             </Link> */}
             <Link to="/policy">
-                <VerticalSection
+                <HorizontalSection
                     icon="policy"
                     active={props.sectionStates[2]}
                     onClick={() => changeSectionStates("policy")}
@@ -48,4 +39,4 @@ function VerticalSideBar(props) {
     )
 }
 
-export default VerticalSideBar
+export default HorizontalNavigationBar

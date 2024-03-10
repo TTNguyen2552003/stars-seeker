@@ -1,4 +1,4 @@
-import "./VerticalSection.css"
+import "./HorizontalSection.css"
 import home from "../../../res/svg/home.svg"
 import homeActive from "../../../res/svg/home-active.svg"
 import post from "../../../res/svg/post.svg"
@@ -7,7 +7,7 @@ import postActive from "../../../res/svg/post-active.svg"
 // import discussionActive from "../../../res/svg/discussion-active.svg"
 import policy from "../../../res/svg/policy.svg"
 import policyActive from "../../../res/svg/policy-active.svg"
-function VerticalSection(props) {
+function HorizontalSection(props) {
     let icons = null
     let sectionTitle = null
     switch (props.icon) {
@@ -35,14 +35,14 @@ function VerticalSection(props) {
 
     return (
         <div
-            className="vertical-section"
+            className="horizontal-section"
+            style={{ borderBottom: props.active ? "1px solid #00FFFF" : "none" }}
             onClick={props.onClick}
-            style={{ boxShadow: props.active ? "inset 2px 0px #00FFFF" : "none" }}
         >
             <img
-                src={props.active ? icons[1] : icons[0]}
-                alt={sectionTitle}
                 className="icon"
+                src={props.active ? icons[1] : icons[0]}
+                alt={props.icon}
             />
             <p
                 className="section-title"
@@ -54,4 +54,4 @@ function VerticalSection(props) {
     )
 }
 
-export default VerticalSection
+export default HorizontalSection

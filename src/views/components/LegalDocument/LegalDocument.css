@@ -3,56 +3,114 @@
     src: url("../../../res/fonts/Roboto-Regular.ttf");
 }
 
-.legal-document {
-    max-width: 944px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 36px 96px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0.6)
-    );
-    border: 1px solid white;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px 2px white;
+@media only screen and (min-width: 768px) {
+    .legal-document {
+        max-width: 944px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 36px 96px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.6)
+        );
+        border: 1px solid white;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 20px 2px white;
+    }
+
+    .legal-document > .legal-document-title-container {
+        display: flex;
+        flex: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .legal-document > .legal-document-title-container > .legal-document-title {
+        padding: 0px;
+        margin: 0px;
+        text-wrap: nowrap;
+        font-family: "Roboto-Regular";
+        font-size: 32px;
+        line-height: 40px;
+        color: #00ffff;
+        filter: drop-shadow(0px 0px 4px #00ffff);
+    }
+
+    .legal-document > .legal-document-body-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .legal-document > .legal-document-body-container > .legal-document-body {
+        padding: 0px;
+        margin: 0px;
+        text-wrap: wrap;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
 }
 
-.legal-document > .legal-document-title-container {
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: center;
-}
+@media only screen and (max-width: 767px) {
+    .legal-document {
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 24px 24px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.6)
+        );
+        border: 1px solid white;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 20px 2px white;
+    }
 
-.legal-document > .legal-document-title-container > .legal-document-title {
-    padding: 0px;
-    margin: 0px;
-    text-wrap: nowrap;
-    font-family: "Roboto-Regular";
-    font-size: 32px;
-    line-height: 40px;
-    color: #00ffff;
-    filter: drop-shadow(0px 0px 4px #00ffff);
-}
+    .legal-document > .legal-document-title-container {
+        display: flex;
+        flex: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+    }
 
-.legal-document > .legal-document-body-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+    .legal-document > .legal-document-title-container > .legal-document-title {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Roboto-Regular";
+        font-size: 32px;
+        line-height: 40px;
+        color: #00ffff;
+        filter: drop-shadow(0px 0px 4px #00ffff);
+    }
 
-.legal-document > .legal-document-body-container > .legal-document-body {
-    padding: 0px;
-    margin: 0px;
-    text-wrap: wrap;
-    font-family: "Roboto-Regular";
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
+    .legal-document > .legal-document-body-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .legal-document > .legal-document-body-container > .legal-document-body {
+        padding: 0px;
+        margin: 0px;
+        text-wrap: wrap;
+        font-family: "Roboto-Regular";
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: white;
+    }
 }

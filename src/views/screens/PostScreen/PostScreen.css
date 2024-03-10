@@ -1,9 +1,23 @@
-.post-screen {
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
-    padding: 96px 48px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 80px;
+@media only screen and (min-width: 768px) {
+    .post-screen {
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+        padding: 96px 48px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .post-screen {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        padding: 48px 24px;
+    }
 }

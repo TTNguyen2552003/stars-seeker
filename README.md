@@ -2,7 +2,7 @@
 
 This project showcases proficiency in React.js, JavaScript, HTML, and CSS. Through this project, I've demonstrated my understanding of building interactive user interfaces, managing state effectively, and styling components for a visually appealing user experience. Whether you're new to web development or looking to expand your skills in front-end technologies, this project serves as a practical demonstration of key concepts and best practices in modern web development.
 
--   _Note: The project just has the home screen and the policy screen_
+-   _Note: The project just has the home screen, the post screen, and the policy screen _
 
 ## Installation
 
