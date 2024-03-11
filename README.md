@@ -21,6 +21,9 @@ First, you need to install all the packages.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Website
+`https://stars-seeker-web.web.app/`
+
 ## Resources
 
 -   My UX case study on Behance [here](https://www.behance.net/gallery/192537677/Stars-Seeker-joining-waitlist-web)
